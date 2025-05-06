@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #1e1e2f;
+    color: #f0f0f0;
+    scroll-behavior:smooth; /* For smooth scrolling */
+}
+.my-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+  }
+.my-button:hover {
+    background-color: #4c6e6e;
+  }
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .contact-info {
+    flex: 1;
+  }
+
+  .contact-info div {
+    margin-bottom: 30px;
+  }
+
+  .contact-info h3 {
+    margin: 5px 0;
+  }
+
+  .contact-info .icon {
+    font-size: 28px;
+    margin-right: 10px;
+  }
+
+  .contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    background: transparent;
+    border: 1px solid #888;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+  }
+
+  .contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #00bfff;
+    outline: none;
+  }
+
+  .contact-form button {
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .contact-form button:hover {
+    background-color: #008ac9;
+  }
+header {
+    background-color: #070505;
+    position: fixed;
+    bottom: 0;
+    left: 25%;
+    width: 50%;
+    bottom: 35px;
+    z-index: 1000;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background: rgba(0, 0, 0, 0.3); /* semi-transparent background */
+    backdrop-filter: blur(10px);   /* actual blur effect */
+    -webkit-backdrop-filter: blur(10px); /* for Safari support */
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Professional Heading Style */
+.professional-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4047a2;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Home Section */
+.home-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #1e1e2f;
+    color: #fff;
+    animation: fadeIn 1.5s ease-in-out;
+}
+.home-text {
+    max-width: 50%;
+    text-align: center;
+}
+.profile-image {
+    width:fit-content;
+    height: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Flexbox Layout */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.flex-item {
+    flex: 1 1 4%;
+    padding: 5px;
+    background-color: transparent;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 1.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    float: right;
+    padding-left: 20px;
+}
+.image-animation {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    animation: imageFade 2s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes imageFade {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #282a36;
+    padding: 10px 0;
+}
